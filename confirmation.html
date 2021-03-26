@@ -7,17 +7,23 @@
   >
     <h1>Confirmation Page</h1>
 
-    <!-- <script src="https://localservice.xyz:9000/ticket/bundles/websiteConversion.bundle.js"></script> -->
-
-    <script src="https://boxoffice.etixtest.com:18965/ticket/bundles/websiteConversion.bundle.js"></script>
+    <!-- Etix Code -->
+    <script src="https://localservice.xyz:9000/ticket/bundles/websiteConversion.bundle.js"></script>
 
     <!-- (optional) display etix order confirmation -->
     <div class="etix-order-confirmation"></div>
-    
+
     <!-- get order data -->
     <script>
-    var order = getEtixOrder();
-    alert("Hello " + order.firstName);
+      var order = getEtixOrder();
+      alert(
+        "Hello " +
+          order.firstName +
+          ", your total is " +
+          order.total +
+          " " +
+          order.currency
+      );
     </script>
   </body>
 </html>
