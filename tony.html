@@ -1,1 +1,12 @@
+<!-- Etix Code -->
+<script src="https://boxoffice.etixtest.com:18965/ticket/bundles/websiteConversion.bundle.js"></script>
+
 <h1>Tony</h1>
+<!-- (optional) display etix order confirmation -->
+<div class="etix-order-confirmation"></div>
+
+<!-- get order data -->
+<script>
+var order = getEtixOrder();
+alert("Hello " + order.firstName + ", your total is " + order.total + " " + order.currency);
+</script>
