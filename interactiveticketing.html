@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Demo Page</title>
+  </head>
+  <body
+    style="padding: 30px; background-color: #dddddd; font-family: sans-serif"
+  >
+    <h1>Confirmation Page</h1>
+
+
+<!-- INTERACTIVE TICKETING CODE -->
+<script src="https://dev-secure.interactiveticketing.com/snippets/conversion.js"></script>
+
+<!-- (optional) display order confirmation -->
+<div class="interactiveticketing-order-confirmation"></div>
+
+<!-- get order data -->
+<script>
+var order = getTicketOrder();
+alert("Hello " + order.firstName + ", your total is " + order.total + " " + order.currency);
+</script>
+
+
+
+
+  </body>
+</html>
